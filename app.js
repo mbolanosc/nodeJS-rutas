@@ -6,11 +6,11 @@ var Router = require('node-router');
 var router = Router();
 var route = router.push;
 //rutas:
-route('GET', '/', function(request,response){
+route('GET', '/uno', function(request,response){
 	console.log('llamada al index.');
 	response.send('Hola mundo de rutas yeyyy!');
 })
-route('GET' , '/hola', function(request,response){
+route('GET' , '/dos', function(request,response){
 	console.log('llamada al /hola');
 	response.send('error');
 })
